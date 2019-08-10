@@ -87,23 +87,40 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
+       
+
         //If we're not touching the ground then jump, else don't jump
         if (!myCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) && extraJumps == 0)
         {
             return;
         }
-
-        if (myCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+          
+        if (Input.GetButtonDown("Jump") && myCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
-            extraJumps = 1;
+            Debug.Log("Jump!");
+            myRigidBody.velocity += Vector2.up * jumpHeight;
+        }
+        else if (Input.GetButtonUp("Jump"))
+        {
+            if (myRigidBody.velocity.y > 0)
+            {
+                myRigidBody.velocity = Vector2.up * 0.5f;
+            }
         }
 
-        if (CrossPlatformInputManager.GetButtonDown("Jump"))
-        { 
-              Vector2 jumpVelocityToAdd = Vector2.up * jumpHeight;
-               myRigidBody.velocity += jumpVelocityToAdd;
-              extraJumps--;  
-        }
+         /// Code below is for double jumping.
+
+        //if (myCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        // {
+        //    extraJumps = 1;
+        //}
+
+        // if (CrossPlatformInputManager.GetButtonDown("Jump"))
+        // { 
+        //      Vector2 jumpVelocityToAdd = Vector2.up * jumpHeight;
+        //       myRigidBody.velocity += jumpVelocityToAdd;
+        //      extraJumps--;  
+        // }
     }
 
     private void Die()

@@ -117,10 +117,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 4
-  jumpHeight: 10
+  jumpHeight: 12
   climbSpeed: 5
   deathKick: {x: 0, y: 15}
-  joystick: {fileID: 0}
   isAlive: 1
 --- !u!50 &971946787
 Rigidbody2D:

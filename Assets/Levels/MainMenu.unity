@@ -4381,18 +4381,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1549817659 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6675550617717906142, guid: f89a1358192666a419a2bc533939006a,
-    type: 3}
-  m_PrefabInstance: {fileID: 8359413756899293738}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1581066911
 GameObject:
   m_ObjectHideFlags: 0
@@ -6275,11 +6263,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2829440983359941736, guid: 939ccf37f7ab44d408b13feb623566c9,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 2829440983359941737, guid: 939ccf37f7ab44d408b13feb623566c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6335,11 +6318,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6103412936570340717, guid: 939ccf37f7ab44d408b13feb623566c9,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1549817659}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939ccf37f7ab44d408b13feb623566c9, type: 3}
 --- !u!95 &2829440983793882999 stripped
