@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
+    [SerializeField] float scrollSpeed;
 
-    
-      
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector2(-0.4f * Time.deltaTime, 0));
+         transform.Translate(new Vector2(scrollSpeed * Time.deltaTime, 0));
     }
 }
