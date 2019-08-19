@@ -190,7 +190,7 @@ RectTransform:
   m_Children:
   - {fileID: 405140987}
   - {fileID: 1567124538}
-  - {fileID: 6675550617717906131}
+  - {fileID: 6675550617701605475}
   m_Father: {fileID: 8359413757774352794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -306,8 +306,8 @@ MonoBehaviour:
   playerLives: 3
   livesText: {fileID: 405140988}
   scoreText: {fileID: 1567124539}
-  joystick: {fileID: 6675550617717906142}
---- !u!1001 &8359413756793400097
+  joystick: {fileID: 6675550617701605486}
+--- !u!1001 &8359413756809597329
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -377,22 +377,22 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 243.36002
+      value: 234.2
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 190.32005
+      value: 277
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 108.7
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 108.7
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -426,17 +426,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
---- !u!224 &6675550617717906131 stripped
+--- !u!224 &6675550617701605475 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
     type: 3}
-  m_PrefabInstance: {fileID: 8359413756793400097}
+  m_PrefabInstance: {fileID: 8359413756809597329}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6675550617717906142 stripped
+--- !u!114 &6675550617701605486 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
     type: 3}
-  m_PrefabInstance: {fileID: 8359413756793400097}
+  m_PrefabInstance: {fileID: 8359413756809597329}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1

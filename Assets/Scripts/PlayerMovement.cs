@@ -34,8 +34,8 @@ public class PlayerMovement : MonoBehaviour
         if (!isAlive) { return; }
  
         //Keyboard controls, disable for onScreen Joystick
-        Run(CrossPlatformInputManager.GetAxis("Horizontal")); 
-        ClimbLadder(CrossPlatformInputManager.GetAxis("Vertical"));
+         Run(CrossPlatformInputManager.GetAxis("Horizontal")); 
+         ClimbLadder(CrossPlatformInputManager.GetAxis("Vertical"));
 
         Jump();
         FlipSprite();

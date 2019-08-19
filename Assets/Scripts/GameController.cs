@@ -17,8 +17,7 @@ public class GameController : MonoBehaviour
 
 
     private void Awake()
-    {
-        
+    { 
         livesText.text = playerLives.ToString();
         scoreText.text = gameScore.ToString();
 
@@ -28,7 +27,7 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         } else { 
             DontDestroyOnLoad(gameObject);
-        }
+        } 
     }
      
     public void Score(int score)
@@ -76,7 +75,7 @@ public class GameController : MonoBehaviour
     void ProcessJoystickHorizontal()
     {
       joystickHoriz =  joystick.Horizontal; 
-        FindObjectOfType<PlayerMovement>().Run(joystickHoriz);
+      FindObjectOfType<PlayerMovement>().Run(joystickHoriz);
     }
 
     void ProcessJoystickVertical()
