@@ -68,8 +68,9 @@ public class GameController : MonoBehaviour
     {
         aliveChecker = FindObjectOfType<PlayerMovement>().isAlive;
         if (!aliveChecker) { return; }
-        ProcessJoystickHorizontal();
-        ProcessJoystickVertical();
+        //Joystick Controls, Enable to Override Keyboard.
+        //ProcessJoystickHorizontal();
+        //ProcessJoystickVertical();
     }
 
     void ProcessJoystickHorizontal()

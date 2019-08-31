@@ -96,8 +96,7 @@ public class PlayerMovement : MonoBehaviour
         }
           
         if (Input.GetButtonDown("Jump") && myCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {
-            Debug.Log("Jump!");
+        { 
             myRigidBody.velocity += Vector2.up * jumpHeight;
         }
         else if (Input.GetButtonUp("Jump"))
